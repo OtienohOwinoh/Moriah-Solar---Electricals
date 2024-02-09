@@ -246,8 +246,9 @@
 
 
 /*** Service ***/
-.service-item {
+.service-items {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    cursor: pointer;
 }
 
 .service-icon {
@@ -265,7 +266,7 @@
     transition: .5s;
 }
 
-.service-item:hover .service-icon {
+.service-items:hover .service-icon {
     color: #FFFFFF;
     background: var(--primary);
 }
@@ -574,3 +575,120 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+.popup-box {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+   
+   
+}
+
+.popup-box.open {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-box .popup-content {
+
+    background-color: #FFFFFF;
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+
+}
+
+.popup-box .popup-header {
+
+    padding: 15px 40px 15px 15px;
+   
+ 
+}
+
+.popup-box .popup-header .popup-close-icon {
+
+    position: absolute;
+    /* background-color: red; */
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #32C36C;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 30px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+
+
+}
+
+.popup-box .popup-header h1 {
+
+    color: #32C36C;
+    font-size: 30px;
+    margin: 0;
+}
+
+.popup-box .popup-body {
+    padding: 15px;
+    background-color: #dddddd;
+
+
+
+}
+
+.popup-box .popup-body p {
+
+    font-size: 16px;
+    border-radius: 25px;
+
+}
+
+.popup-box .popup-footer {
+
+    padding: 15px;
+    background-color: #dddddd;
+    text-align: right;
+    border-radius: 5px;
+  
+}
+
+.popup-box .popup-footer .btn {
+
+    padding: 8px 15px;
+    border: 1px solid #555555;
+    color: #32C36C;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.popup-box .popup-footer .btn:focus {
+
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
